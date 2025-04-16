@@ -1,0 +1,179 @@
+<html>
+    <head>
+        <title>Playz English</title>
+        <link rel="icon" type="image" href="images/P.png">
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('#language-select').on('change', function() {
+          if ($(this).val() === 'हिंदी') {
+            window.location.href = 'index1.html';
+          }
+        });
+      });
+      function signInRedirect() {
+        window.location.href = 'signup.html';
+      }
+     </script> 
+    </head>
+    <body>
+<div class="header">
+    <nav>
+        <img src="images/logo.png" class="logo">
+        <div>
+            <select class="language-btn" id="language-select">
+                <option style="color: black;">ENGLISH</option>
+                <option style="color: black;">हिंदी</option>
+            </select>
+            <button onclick="signInRedirect()">Sign in</button>
+
+        </div>
+    </nav>
+    <div class="header-content">
+        <h1>Unlimited movies,TV shows and more.</h1>
+        <h3>Watch anywhere,cancel anytime</h3>
+        <p>Ready to watch? enter your email to create or restart your membership</p>
+        <form class="email-signup" onsubmit="if (document.getElementById('email-input').value !== '') { window.location.href='signin.html'; return false; }">
+            <input type="email" id="email-input" placeholder="email address" required>
+            <button id="get-started-btn">Get Started</button>
+          </form>
+    </div>
+</div>
+
+<div class="features">
+    <div class="row">
+        <div class="text-col">
+            <h2>Enjoy your TV</h2>
+            <p>Watch on Smart TV's,Playstation,Xbox,Chromecast,Apple TV,Blue-ray players and more</p>
+        </div>  
+        <div class="img-col">
+            <img src="images/feature-1.png">
+        </div>
+     </div>
+
+
+<div class="row">
+    <div class="img-col">
+        <img src="images/feature-2.jpg">
+    </div>
+    <div class="text-col">
+        <h2>Download your shows to watch offline</h2>
+        <p>Save your favourite easily and always have something to watch</p>
+
+    </div>
+</div>
+
+
+
+    <div class="row">
+        <div class="text-col">
+            <h2>Watch Everywhere</h2>
+            <p>Stream unlimited movies and Tv shows on your phone laptop,mobile and TV</p>
+        </div>  
+        <div class="img-col">
+            <img src="images/feature-3.png">
+        </div>
+     </div>
+
+
+<div class="row">
+    <div class="img-col">
+        <img src="images/feature-4.png">
+    </div>
+    <div class="text-col">
+        <h2>Create profiles for kids</h2>
+        <p>Send children on adventures with their favourite character in a space made for them free with your memebership</p>
+    </div>
+</div>
+</div>
+<div class="faq">
+    <h2>Frequently Asked question</h2>
+    <ul class="accordion">
+        <li>
+            <input type="radio" name="accordion" id="first">
+            <label for="first">What is Playz?</label>
+            <div class="content">
+                <p>Playz is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
+                </p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id="second">
+            <label for="second">How much does Playz cost?</label>
+            <div class="content">
+                <p>Watch Playz on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹149 to ₹649 a month. No extra costs, no contracts.
+                </p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id="third">
+            <label for="third">Where can I watch?</label>
+            <div class="content">
+                <p>Watch anywhere, anytime. Sign in with your Playz account to watch instantly on the web at Playz.com from your personal computer or on any internet-connected device
+                    </p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id="fourth">
+            <label for="fourth">How can I cancel?</label>
+            <div class="content">
+                <p>Playz is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.
+                    </p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id="fifth">
+            <label for="fifth">What can I watch on Playz?</label>
+            <div class="content">
+                <p>Playz has an extensive library of feature films, documentaries, TV shows, anime, award-winning Playz originals, and more. Watch as much as you want, anytime you want.
+                    </p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id="sixth">
+            <label for="sixth">Is Playz good for kids?</label>
+            <div class="content">
+                <p>Playz has lots of great content for kids, but there are shows and movies that aren't appropriate for them. It's easy for kids to stumble onto these without restrictions. That's why Playz offers a Kids experience.
+                    </p>
+            </div>
+        </li>
+    </ul>
+    <p>Ready to watch?Enter your email to create or restart your membership</p>
+    <form class="email-signup">
+        <input type="email" placeholder="Email address" required>
+        <button type="Submit">Get Started</button>
+    </form>
+</div> 
+<div class="footer"><h2>Questions? call 000-000-000-000</h2>
+    <div class="row">
+        <div class="col">
+<a href="#">FAQ</a>`
+<a href="#">Investor Relations</a>
+<a href="#">Privacy</a>
+<a href="#">Speed Test</a>
+        </div>
+        <div class="col">
+            <a href="#">Help Center</a>
+            <a href="#">Jobs</a>
+            <a href="#">Cookie Preferences</a>
+            <a href="#">Legal Notices</a>
+        </div>
+        <div class="col">
+            <a href="#">Account</a>
+            <a href="#">Ways to Watch</a>
+            <a href="#">Corporate Information</a>
+            <a href="#">Only on Playz</a>
+        </div>
+        <div class="col">
+            <a href="#">Media Center</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </div>
+    <!-- <button class="language-btn">English<img src="images/down-icon.png"></button> -->
+    <p class="copyright txt">Playz India</p>
+</div>
+    </body>
+</html>
