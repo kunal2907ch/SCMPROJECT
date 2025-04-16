@@ -1,0 +1,181 @@
+<html>
+    <head>
+        <title>Playz Hindi</title>
+        <link rel="icon" type="image" href="images/P.png">
+        <link rel="stylesheet" type="text/css" href="style1.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('#language-select').on('change', function() {
+          if ($(this).val() === 'ENGLISH') {
+            window.location.href = 'index.html';
+          }
+        });
+      });
+      function signInRedirect() {
+        window.location.href = 'signup.html';
+      }
+    </script>
+    </head>
+    <body>
+<div class="header">
+    <nav>
+        <img src="images/logo.png" class="logo">
+        <div>
+            <select class="language-btn" id="language-select">
+                <option style="color: black;">हिंदी</option>
+                <option style="color: black;">ENGLISH</option>
+            </select>
+            <button onclick="signInRedirect()">दाखिल करना</button>
+            
+
+        </div>
+    </nav>
+    <div class="header-content">
+        <h1>असीमित फिल्में, टीवी शो और बहुत कुछ।</h1>
+        <h3>कहीं भी देखें, कभी भी रद्द करें</h3>
+        <p>देखने के लिए तैयार हैं? अपनी सदस्यता बनाने या पुनः आरंभ करने के लिए अपना ईमेल दर्ज करें</p>
+        <form class="email-signup" onsubmit="if (document.getElementById('email-input').value !== '') { window.location.href='signin.html'; return false; }">
+            <input type="email" id="email-input" placeholder="मेल पता" required>
+            <button id="get-started-btn" >शुरू हो जाओ</button>
+        </form>
+    </div>
+</div>
+
+<div class="features">
+    <div class="row">
+        <div class="text-col">
+            <h2>अपने टीवी का आनंद लें</h2>
+            <p>स्मार्ट टीवी, प्लेस्टेशन, एक्सबॉक्स, क्रोमकास्ट, एप्पल टीवी, ब्लू-रे प्लेयर्स और अन्य पर देखें|</p>
+        </div>  
+        <div class="img-col">
+            <img src="images/feature-1.png">
+        </div>
+     </div>
+
+
+<div class="row">
+    <div class="img-col">
+        <img src="images/feature-2.jpg">
+    </div>
+    <div class="text-col">
+        <h2>ऑफ़लाइन देखने के लिए अपने शो डाउनलोड करें</h2>
+        <p>अपने पसंदीदा को आसानी से सहेजें और हमेशा देखने के लिए कुछ न कुछ रखें|</p>
+
+    </div>
+</div>
+
+
+
+    <div class="row">
+        <div class="text-col">
+            <h2>हर जगह देखो</h2>
+            <p>अपने फ़ोन, लैपटॉप और टीवी पर असीमित फिल्में और टीवी शो स्ट्रीम करें</p>
+        </div>  
+        <div class="img-col">
+            <img src="images/feature-3.png">
+        </div>
+     </div>
+
+
+<div class="row">
+    <div class="img-col">
+        <img src="images/feature-4.png">
+    </div>
+    <div class="text-col">
+        <h2>बच्चों के लिए प्रोफ़ाइल बनाएं</h2>
+        <p>अपनी सदस्यता से बच्चों को उनके लिए बनाई गई जगह में उनके पसंदीदा चरित्र के साथ साहसिक यात्रा पर भेजें</p>
+    </div>
+</div>
+</div>
+<div class="faq">
+    <h2>अक्सर पूछा गया सवाल</h2>
+    <ul class="accordion">
+        <li>
+            <input type="radio" name="accordion" id="first">
+            <label for="first">Playz क्या है??</label>
+            <div class="content">
+                <p>Playz एक स्ट्रीमिंग सेवा है जो हजारों इंटरनेट से जुड़े उपकरणों पर विभिन्न प्रकार के पुरस्कार विजेता टीवी शो, फिल्में, एनीमे, वृत्तचित्र और बहुत कुछ प्रदान करती है।
+                </p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id="second">
+            <label for="second">Playz की लागत कितनी है?</label>
+            <div class="content">
+                <p>Playz को अपने स्मार्टफोन, टैबलेट, स्मार्ट टीवी, लैपटॉप या स्ट्रीमिंग डिवाइस पर एक निश्चित मासिक शुल्क पर देखें। योजनाएं ₹149 से ₹649 प्रति माह तक हैं। कोई अतिरिक्त लागत नहीं, कोई अनुबंध नहीं।
+                </p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id="third">
+            <label for="third">मैं कहाँ देख सकता हूँ?</label>
+            <div class="content">
+                <p>कहीं भी, कभी भी देखें. अपने व्यक्तिगत कंप्यूटर या किसी इंटरनेट से जुड़े डिवाइस से Playz.com पर वेब पर तुरंत देखने के लिए अपने Playz खाते से साइन इन करें
+                    </p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id="fourth">
+            <label for="fourth">मैं कैसे रद्द कर सकता हूँ?</label>
+            <div class="content">
+                <p>Playz लचीला है. इसमें कोई कष्टप्रद अनुबंध और कोई प्रतिबद्धता नहीं है। आप दो क्लिक में आसानी से अपना खाता ऑनलाइन रद्द कर सकते हैं। कोई रद्दीकरण शुल्क नहीं है - अपना खाता किसी भी समय शुरू या बंद करें।
+                    </p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id="fifth">
+            <label for="fifth">मैं Playz पर क्या देख सकता हूँ?</label>
+            <div class="content">
+                <p>Playz के पास फीचर फिल्मों, वृत्तचित्रों, टीवी शो, एनीमे, पुरस्कार विजेता Playz मूल और बहुत कुछ की एक विस्तृत लाइब्रेरी है। जितना चाहो, जब चाहो देखो।
+                    </p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id="sixth">
+            <label for="sixth">क्या Playz बच्चों के लिए अच्छा है?</label>
+            <div class="content">
+                <p>
+                    Playz में बच्चों के लिए बहुत सारी बेहतरीन सामग्री है, लेकिन ऐसे शो और फिल्में भी हैं जो उनके लिए उपयुक्त नहीं हैं। बच्चों के लिए बिना किसी रोक-टोक के इन्हें पकड़ना आसान है। इसीलिए Playz बच्चों का अनुभव प्रदान करता है।
+                    </p>
+            </div>
+        </li>
+    </ul>
+    <p>देखने के लिए तैयार हैं? अपनी सदस्यता बनाने या पुनः आरंभ करने के लिए अपना ईमेल दर्ज करें</p>
+    <form class="email-signup">
+        <input type="email" placeholder="मेल पता" required>
+        <button type="Submit">शुरू हो जाओ</button>
+    </form>
+</div> 
+<div class="footer"><h2>प्रश्न? 000-000-000-000 पर कॉल करें</h2>
+    <div class="row">
+        <div class="col">
+<a href="#">FAQ</a>
+<a href="#">निवेशक संबंध</a>
+<a href="#">गोपनीयता</a>
+<a href="#">गति परीक्षण</a>
+        </div>
+        <div class="col">
+            <a href="#">सहायता केंद्र</a>
+            <a href="#">नौकरियाँ</a>
+            <a href="#">कुकी प्राथमिकताएँ</a>
+            <a href="#">कानूनी नोटिस</a>
+        </div>
+        <div class="col">
+            <a href="#">खाता</a>
+            <a href="#">देखने के तरीके</a>
+            <a href="#">कॉर्पोरेट जानकारी</a>
+            <a href="#">केवल Playz पर</a>
+        </div>
+        <div class="col">
+            <a href="#">मीडिया सेंटर</a>
+            <a href="#">उपयोग की शर्तें</a>
+            <a href="#">हमसे संपर्क करें</a>
+        </div>
+    </div>
+    <!-- <button class="language-btn">English<img src="images/down-icon.png"></button> -->
+    <p class="copyright txt">Playz India</p>
+</div>
+<script src="js1.js"></script>
+    </body>
+</html>
