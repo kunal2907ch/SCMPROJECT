@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .logo img{
+            width: 400px;
+            height: 400px;
+            margin-top: -170px;
+            margin-left: -100px;
+        }
+        .logo{
+            border-bottom:4px solid #333;
+            height: 80px;
+        }
+        .movie video{
+            width: 100%;
+            height: 90%;
+            margin-left: 40px;
+            margin-top: 40px;
+        }
+        .content{
+            color: white;
+            width: 350px;
+            margin-left: 200px;
+            margin-top: 15px;
+        }
+        .main{
+            display: flex;
+        }
+        .content ul{
+            margin-top: 30px;
+            margin-left: -40px;
+        }
+        .rate{
+            margin-top: 400px;
+            margin-left: -100px;
+        }
+        .rate h3{
+            color: white;
+            margin-left: -250px;
+            font-size: x-large;
+        }
+    </style>
+</head>
+<body bgcolor="black">
+    <div class="logo">
+        <img src="images/logo.png">
+    </div>
+    <div class="main">
+    <div class="movie">
+        <video width="100%" 
+        height="90%" 
+        controls="controls">
+     <source src="Nobita.mp4"
+             type="video/mp4" />
+ </video>
+    </div>
+    <div class="content">
+        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus eum, similique quasi expedita reprehenderit tempora at quis? Ipsam dolor id itaque facere harum eos, voluptatibus asperiores repellat praesentium eveniet blanditiis?</h3>
+            <h3><ul>Movie -</ul></h3>
+            <h3><ul>Duration -</ul></h3>
+            <h3><ul>Rating -</ul></h3>
+    </div>
+    <div class="rate">
+        <h3>To Review The Movie <button>Click Here</button> </h3>
+    </div>
+    </div>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        .header{
+            display: flex;
+            background-image:url(images/black.avif);
+            height: 100px;
+            
+        }
+        .logo{
+            height: 300px;
+            margin-top: -120px;
+            margin-left: -70px;
+        }
+        .search{
+            height: 20px;
+            padding-left: 10px;
+            margin-top: 15px;
+            margin-left: 500px;
+        }
+        .adults{
+            height: 80px;
+            width: 80px;
+            margin-left: 770px;
+            margin-top: 10px;
+            border: 0px black;
+            border-radius: 50px;
+        }
+        .links{
+            display: flex;
+            gap: 40px;
+            margin-top: 20px;
+            color: azure;
+        }
+        .links a{
+            color: white;
+        }
+        .links a:hover{
+            color: red;
+        }
+        .box{
+            border-top:6px solid #333;
+            background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0)),url(images/past.jpeg);
+            cursor: pointer;
+            height: 500px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding:10px 8%;
+            position: relative;
+            
+        }
+        .box h1{
+            margin-top: 380px;
+            color: wheat;
+            font-size: 60px;
+            margin-left: 0px;
+        }
+        .box h3{
+            margin-top: 0px;
+            color: gray;
+            font-size: 40px;
+            margin-left: -90px;
+        }
+        .row1{
+            display: flex;
+            justify-content: space-evenly;
+            margin-left: 20px;
+            margin-top: 20px;
+            border-bottom: 2px #777;
+        }
+        .row1 img{
+            height: 190px;
+            width: 300px;
+            border-radius: 10px;
+        }.a{
+            color: white;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .row2{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top:20px;
+        }
+        .row2 img{
+            height: 190px;
+            width: 300px;
+            border-radius: 10px;
+            margin-left: 20px;
+        }
+            .row3{
+                display: flex;
+                justify-content: space-evenly;
+                margin-top: 20px;
+            }
+            .row3 img{
+                height: 190px;
+                width: 300px;
+                border-radius: 10px;
+                margin-left: 20px;
+            }
+            .row4{
+                display: flex;
+                justify-content: space-evenly;
+                margin-top: 20px;
+            }
+            .row4 img{
+                height: 190px;
+                width: 300px;
+                border-radius: 10px;
+                margin-left: 20px;
+            }
+            .movies img:hover{
+                transform: scale(1.1);
+                transition: 0.5s ease;
+                
+            }
+            .movies{
+                cursor: pointer;
+                margin-top: 20px;
+            }
+            nav{
+                display:flex;
+                align-items:center;
+                justify-content: space-between;
+                padding: 10px 0;;
+            
+            }
+            .footer{
+                padding:50px 15% 10px;
+                border-top:6px solid #333;
+                color:#777; 
+            }
+            .footer h2{
+                font-size:18px;
+                font-weight:400;
+                margin-bottom:30px;
+            
+            }
+            .footer .col{
+                flex-basis:25%;
+                flex-grow:1;
+                margin-bottom:20px;
+            }
+            .footer .col a{
+                display:block;
+                text-decoration:none;
+                color:#777;font: size 14%;
+                margin-bottom:10px;
+            }
+            .footer .row{
+                align-items:flex-start;
+                padding:10px 0;
+                display: flex;
+            }
+            .footer .language-btn{
+                color:#fff;
+                padding:10px 20px;
+                border-radius:3px;
+            }
+            .copyright-txt{
+                font-size:14px;
+                margin-top:20px;
+                margin-bottom: 10px;
+            }
+            .one{
+                color: #fff;
+                font-size: 25px;
+                margin-left: 20px;
+            }
+            .two{
+                border-top:6px solid #333;
+                color: #fff;
+                font-size: 25px;
+                margin-left: 20px;
+                margin-top: 20px;
+                padding-top: 10px;
+            }
+            .three{
+                border-top:6px solid #333;
+                color: #fff;
+                font-size: 25px;
+                margin-left: 20px;
+                margin-top: 20px;
+                padding-top: 10px;
+            }
+            .four{
+                border-top:6px solid #333;  
+                color: #fff;
+                font-size: 25px;
+                margin-left: 20px;
+                margin-top: 20px;
+                padding-top: 10px;
+            }
+    </style>
+</head>
+<body bgcolor="black" >
+    <div class="header">
+        <img src="images/logo.png" class="logo">
+        <div class="links">
+            <a href="accounts.html">Home</a>
+            <a href="about us.html">About</a>
+            <a href="contactus.html">Contact</a>
+        </div>
+        <!-- <input placeholder="Search" class="search"> -->
+        <a href="accounts.html"><img src="images/adults.jpg" class="adults"></a>
+    </div>
+    
+<div class="box">
+    <h1>JOKER</h1>
+    <h3>Nobody's civil anymore</h3>
+</div>
+<br>
+<hr>
+<h2 class="a">Here are some of the top picks for you</h2>
+<hr>
+<div class="movies">
+    <h3 class="one">Hot Picks</h3>
+    <div class="row1">
+        <a href="bhediya.html" target="_main"><img src="images/bhediya.avif"></a>
+        <a href="joker.html" target="_main"><img src="images/joker.jpg"></a>
+        <a href="Jawaani.html" target="_main"><img src="images/yjhd.png"></a>
+        
+    </div>
+    <h3 class="two">Trending Now</h3>
+    <div class="row2">
+        <a href="shiddat.html"target="_main"><img src="images/shiddat.jpg"></a>
+        
+       <a href="freedy.html" target="_main"> <img src="images/freddy.webp"></a>
+        
+        <a href="chor nikal ke bhaga.html"target="_main"><img src="images/chor.jpeg"></a>
+    </div>
+    <h3 class="three">Popular on PLAYZ</h3>
+    <div class="row3">
+        <!-- <img src="images/pathaan.jpeg"> -->
+        <a href="3 idiots.html"target="_main"><img src="images/3idiots.avif"></a>
+        <!-- <img src="images/tiger3.avif"> -->
+        <a href="DON.html"target="_main"><img src="images/don.jpg"></a>
+       
+        <a href="aashiqui2.html"target="_main"><img src="images/aashiqui2.jpeg"></a>
+        <!-- <img src="images/animal.jpg"> -->
+    </div>
+    <h3 class="four">Latest Releases</h3>
+    <div class="row4">
+        <a href="pathan.html"target="_main"><img src="images/pathaan.jpeg"></a>
+        <!-- <img src="images/3idiots.avif"> -->
+       <a href="tiger.html"target="_main"><img src="images/tiger3.avif"></a>
+        <!-- <img src="images/don.jpg"> -->
+       
+        <!-- <img src="images/aashiqui2.jpeg"> -->
+        <a href="animal.html" target="_main"><img src="images/animal.jpg"></a>
+    </div>
+    
+    <br><br>
+
+</div>
+<div class="footer"><h2>Questions? call 000-000-000-000</h2>
+    <div class="row">
+        <div class="col">
+<a href="#">FAQ</a> 
+<a href="#">Investor Relations</a>
+<a href="#">Privacy</a>
+<a href="#">Speed Test</a>
+        </div>
+        <div class="col">
+            <a href="#">Help Center</a>
+            <a href="#">Jobs</a>
+            <a href="#">Cookie Preferences</a>
+            <a href="#">Legal Notices</a>
+        </div>
+        <div class="col">
+            <a href="#">Account</a>
+            <a href="#">Ways to Watch</a>
+            <a href="#">Corporate Information</a>
+            <a href="#">Only on Playz</a>
+        </div>
+        <div class="col">
+            <a href="#">Media Center</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </div>
+    <!-- <button class="language-btn">English<img src="images/down-icon.png"></button> -->
+    <p class="copyright txt">Playz India</p>
+</div>
+</body>
+</html>
