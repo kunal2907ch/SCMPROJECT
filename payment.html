@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000c4;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .payment-container {
+            background-color: #ffffffaa;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 500px;
+            text-align: center;
+            margin-top: -60px;
+        }
+        .payment-container h2 {
+            margin-bottom: 20px;
+        }
+        .payment-info {
+            margin-bottom: 30px;
+            text-align: left;
+        }
+        #reviewForm input {
+            width: 350px;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #000000;
+            border-radius: 5px;
+            margin-left: 60px;
+        }
+        #reviewForm button {
+            background-color: #019406;
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 200px;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #000000;
+            border-radius: 5px;
+        }
+        #reviewForm button:hover {
+            background-color: #24c42c;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #777;
+        }
+    </style>
+    <script>
+        function submitForm(event) {
+            event.preventDefault(); // Prevent the default form submission
+            // Redirect to payment1.html
+            window.location.href = 'payment1.html';
+        }
+    </script>
+</head>
+<body>
+    <div class="payment-container">
+        <h2>Payment Gateway</h2>
+        <br>
+        <form id="reviewForm" onsubmit="submitForm(event)">
+            <div class="payment-info">
+                <h3>User Information</h3>
+                <input type="text" id="name" placeholder="Your Name" required><br>
+                <input type="text" id="email" placeholder="E-mail" required><br>
+                <input type="text" id="amount" placeholder="Amount" required><br>
+                <input type="text" id="orderId" placeholder="Order Id" required><br>
+            </div>
+        
+            <button type="submit">Submit Information</button>
+        </form>
+
+        <div class="footer">
+            <p>Secure payment processing with the latest encryption standards.</p>
+        </div>
+    </div>
+</body>
+</html>

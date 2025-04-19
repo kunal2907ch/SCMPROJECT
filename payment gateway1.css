@@ -1,0 +1,220 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #444;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    width: 70%;
+    border: 1px soliid #ccc;
+    border-radius: 7px;
+    margin-top: -60px;
+    margin-left: -200px;
+}
+.left{
+    width: 25%;
+    font-weight: bold;
+    margin-left: 90px;
+}
+.left p{
+    padding: 30px 20px;
+}
+.methods{
+    padding: 10px 0;
+    width: 2000px;
+}
+.methods div{
+    padding: 7px 20px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.methods div:hover{
+    box-shadow: 0 0 10px rgba(172, 255, 47, 0.196);
+}
+.methods div::after{
+    content: '';
+    display: inline-block;
+    color: rgb(27, 181, 37);
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 4px 0 4px 4px;
+    border-left-color: var(--fondy-success);
+    margin-left: 10px;
+}
+.fa-solid{
+    margin-right: 10px;
+    font-size: 22px;
+    color: #aaa;
+}
+.center{
+    width: 50%;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    height: 70vh;
+}
+.center a{
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right{
+    width: 1000px;
+    margin-left: 0px;
+}
+.right p{
+    padding: 30px 20px;
+    font-weight: bold;
+    width: 250px;
+}
+.details{
+    padding: 20px 20px;
+}
+.right a{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    padding: 15px;
+}
+.card-details{
+    padding: 20px 80px;
+}
+.card-details .c-number{
+    width: 100%;
+    border: 1px solid  #aaa;
+    border-radius: 3px;
+    padding: 0 12px;
+    margin-top: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+input{
+    border: none;
+    border-radius: 3px;
+    outline: none;
+}
+.c-details{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.cc-exp{
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    height: 50px;
+    margin-top: 10px;
+    padding: 12px;
+    width: 150px;
+}   
+.c-details .cvv-box{
+    border: 1px solid #aaa;
+    margin-top: 10px;
+    padding: 12px;
+    height: 50px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    width: 108px;
+}
+.cc-cvv{
+    width: 60px;
+}
+.email input{
+    width: 100%; 
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    padding: 12px;
+    height: 50px;
+    margin-top: 10px;
+}
+button{
+    width: 100%;
+    border: none;
+    height: 50px;
+    border-radius: 3px;
+    margin-top: 30px;
+    font-size: 18px;
+    margin-left: 10px;
+    color: #444;
+    background-color: rgb(17, 184, 17);
+}
+button a{
+    margin-top: -15px;
+    font-weight: bold;
+}
+button p{
+    margin-top: -2px;
+    font-weight: bold;
+}
+button:hover{
+    background-color: #ff0000;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.payment-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 380px;
+    text-align: center;
+    margin-left: -40px;
+}
+.payment-container h2 {
+    margin-bottom: 20px;
+}
+.payment-info {
+    margin-bottom: 30px;
+    text-align: left;
+}
+.payment-info p {
+    margin: 5px 0;
+}
+.qr-code {
+    margin-bottom: 30px;
+}
+.qr-code img{
+    height: 150px;
+    width: 150px;
+}
+.payment-buttons button {
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+}
+.payment-buttons button.card {
+    background-color: #4c66af;
+    color: white;
+}
+.footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #777;
+}

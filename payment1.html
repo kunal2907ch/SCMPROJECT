@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .payment-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 500px;
+            text-align: center;
+        }
+        .payment-container h2 {
+            margin-bottom: 20px;
+        }
+        .payment-info {
+            margin-bottom: 30px;
+            text-align: left;
+        }
+        .payment-info p {
+            margin: 5px 0;
+        }
+        .qr-code {
+            margin-bottom: 30px;
+        }
+        .payment-buttons button {
+            padding: 15px 30px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            border: none;
+        }
+        .payment-buttons button.paypal {
+            background-color: #0070ba;
+            color: white;
+        }
+        .payment-buttons button.card {
+            background-color: #4caf50;
+            color: white;
+        }
+        .payment-buttons button.crypto {
+            background-color: #f39c12;
+            color: white;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="payment-container">
+        <h2>Payment Gateway</h2>
+        
+
+        <div class="qr-code">
+            <h3>Scan to Pay</h3>
+            <img src="https://via.placeholder.com/150" alt="QR Code">
+        </div>
+
+        <div class="payment-buttons">
+            <button class="paypal">Pay with PayPal</button>
+            <button class="card">Pay with Credit Card</button>
+            <button class="crypto">Pay with Cryptocurrency</button>
+        </div>
+
+        <div class="footer">
+            <p>Secure payment processing with the latest encryption standards.</p>
+        </div>
+    </div>
+</body>
+</html>
