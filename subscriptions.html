@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>subscriptions</title>
+    <link rel="icon" type="image" href="images/P.png">
+
+    <style>
+        body{
+            background-image: url('subscriptions.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .logo{
+            margin-top: -290px;
+            width: 400px;
+            margin-bottom: -210px;
+            margin-left: -90px; 
+        }
+        .heading{
+            font-size: 50px;
+            text-align: center;
+            margin-left: 0px;
+            margin-top: 0px;
+            margin-bottom: -50px;
+            color: black;
+
+        }
+        .plans{
+            background:var(--snd-bg-color);
+            display: flex;
+            margin-top: 80px;
+            justify-content: center;
+            border-color: black;
+            gap: 10px;
+            background: none;
+        }
+        .plans-content{
+            display:grid;
+            grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+            align-items:center;
+            gap:35px;
+            margin-top:67px;
+        }
+
+        .box{
+            padding:30px 30px 50px 30px;
+            height:400px;
+            width: 300px;
+            background: var(--big-color);
+            border-radius:28px;
+            border:2px solid transparent;
+            box-shadow: 0 0 5px var(--main-color);
+            transition:all 0.5s ease;
+            cursor:pointer;
+            border-color: black;
+            gap: 10px;
+            background-image: linear-gradient(rgba(88, 62, 62, 0.7),50%,rgba(0,0,0,0.7));
+            color: rgb(244, 219, 219);
+            max-width: 300px;
+        }
+        .box h3{
+            font-size:35px;
+            font-weight:600;
+            margin-bottom:10px;
+        }
+        .box h2{
+            font-size:43px;
+            font-weight:700;
+            margin-bottom:20px;
+
+        }
+        .box ul li {
+            list-style:disc;
+            font-size:19px;
+            padding-bottom:16px;
+        }
+        .box a {
+            display:inline-block;
+            font-size:22px;
+            line-height:16px;
+            font-weight:700;
+            padding:7px 0;
+            color: var(--text-color);
+            border-bottom:2px solid #5d6c83;
+            transition:all 0.5s ease;
+        }
+        .box i{
+            vertical-align:middle;
+            font-size:25px;
+            color:(--main-color);
+            margin-left:5px;
+        }
+        .box a:hover{
+            border-bottom:2px solid var(--main-color);
+
+        }
+        .box:hover{
+            border:1px solid  var(--main-color);
+            transform:translateY(-5px) scale(1.03);
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="head">
+        <img src="images/logo.png" class="logo">
+    </div>   
+         <h2 class ="heading"><span> Subscriptions</span>
+        </h2> 
+
+         <section class="plans" id="plans">
+            
+            <div class="box">
+                <h3>FREE PLAN </h3>
+                <h3><span>Rs0/month</span></h3>
+                <br>
+                <ul>
+                    <li>Quality - Good</li>
+                    <li>Resolution - 720p (HD)</li>
+                    <li>Max. devices - 1</li>
+                </ul>
+                <a href="accounts.html">
+                    Join Now
+                    
+                </a>
+                </div>
+            <!-- <div class="box">
+                <h3>BASIC PLAN</h3>
+                <h3><span>Rs100/month</span></h3><br>
+                <ul>
+                    <li>Quality - Great</li>
+                    <li>Resolution - 1080p (FHD)</li>
+                    <li>Max. devices - 2</li>
+                </ul>
+                <a href="accounts.html">
+                    Join Now
+                    <i class='bx bx-right-arrow-alt'></i>
+                </a>
+            </div> -->
+            <div class="box">
+                <h3>PREMIUM PLAN</h3>
+                <h3><span>Rs150/month</span></h3><br>
+                <ul>
+                    <li>Quality - Best</li>
+                    <li>Resolution - 4K (UHD)</li>
+                    <li>Max. devices - 4</li>
+                </ul>
+                <a href="payment gateway.html">
+                    Join Now
+                    
+                </a>
+            </div>
+    
+            <!-- <div class="box">
+                <h3>PREMIUM PLAN</h3>
+                <h3><span>Rs300/month</span></h3><br>
+                <ul>
+                    <li>Quality - Best</li>
+                    <li>Resolution - 4K (Ultra FHD)</li>
+                    <li>Max. devices - 4</li>
+                </ul>
+                <a href="#">
+                    Join Now
+                    <i class='bx bx-right-arrow-alt'></i>
+                </a>
+            </div>
+        -->
+    </section>
+</body>
+</html>

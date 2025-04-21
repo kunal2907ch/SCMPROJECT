@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Playz LogIn and Sign Up Page</title>
+    <link rel="icon" type="image" href="images/P.png">
+    <link rel="stylesheet" type="text/css" href="stylesignup.css">
+</head>
+
+<body>
+    <div class="box">
+        <img src="icon.jpeg">
+        <div class="page">
+            <div class="header">
+                <a id="login" class="active" href="#login">log in</a>
+                <a id="signup" href="signin.html">Sign Up</a>
+            </div>
+            <div id="errorMsg"></div>
+            <div class="content">
+                <form class="login" name="loginForm" onsubmit="return validateLogin()">
+                    <input type="text" name="name" id="logName" placeholder="Username">
+                    <input type="password" name="password" id="logPassword" placeholder="Password">
+                    <div id="check">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember Me</label>
+                    </div>
+                    <br><br>
+                    <input type="submit" value="Log In" id="lg1">
+                    <a href="#" style="color: #707070;">Forgot Password?</a>
+                </form>
+                <form class="signup" name="signupForm" onsubmit="return validateSignup()">
+                    <input type="email" name="email" id="signEmail" placeholder="Email">
+                    <input type="text" name="name" id="signName" placeholder="Username">
+                    <input type="password" name="password" id="signPassword" placeholder="Password"><br>
+                    <input type="submit" value="Sign Up">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('lg1').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+    if (validateLogin()) { // Validate login
+        window.location.href = 'subscriptions.html'; // Redirect to accounts.html
+    }
+});
+    </script>
+    <script>
+        // Validation for SignUp form
+        function validateSignup() {
+            const email = document.getElementById('signEmail').value;
+            const username = document.getElementById('signName').value;
+            const password = document.getElementById('signPassword').value;
+            const errorMsg = document.getElementById('errorMsg');
+            errorMsg.innerHTML = ''; // Clear previous error message
+
+            // Validate email format
+            const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            if (!email.match(emailPattern)) {
+                errorMsg.innerHTML = 'Please enter a valid email address.';
+                return false;
+            }
+
+            // Validate username length
+            if (username.length < 6) {
+                errorMsg.innerHTML = 'Username must be at least 6 characters long.';
+                return false;
+            }
+
+            // Validate password length
+            if (password.length < 6) {
+                errorMsg.innerHTML = 'Password must be at least 6 characters long.';
+                return false;
+            }
+
+            return true;
+        }
+
+        // Validation for Login form
+        function validateLogin() {
+            const username = document.getElementById('logName').value;
+            const password = document.getElementById('logPassword').value;
+            const errorMsg = document.getElementById('errorMsg');
+            errorMsg.innerHTML = ''; // Clear previous error message
+
+            // Validate username length
+            if (username.length < 3) {
+                errorMsg.innerHTML = 'Username must be at least 3 characters long.';
+                return false;
+            }
+
+            // Validate password length
+            if (password.length < 6) {
+                errorMsg.innerHTML = 'Password must be at least 6 characters long.';
+                return false;
+            }
+
+            return true;
+        }
+
+        // Sign Up Link redirection
+        const signUpLink = document.getElementById('signup');
+        signUpLink.addEventListener('click', function(event) {
+            event.preventDefault();
+            window.location.href = 'signin.html';
+        });
+    </script>
+</body>
+
+</html>

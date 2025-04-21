@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.head{
+    display:flex;
+    margin-top: -30px;
+
+}
+.image1{
+    width: 350px;
+    left: 850px;
+    top: 100px;
+    height: auto;
+    position: relative;
+}
+
+.image2{
+    width:350px;
+    left: 850px;
+    position: relative;
+    height: auto;
+margin-top: -50px;
+}
+.image3{
+    width:350px;
+    left: 850px;
+    position: relative;
+    margin-top: 50px;
+}
+.para{
+    margin-top: -180px;
+    position: relative;
+}
+.para2{
+    margin-top: -270px;
+    position: relative;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #ffffff;
+    background-image: url(subscriptions.jpg);
+    background-repeat: repeat;
+    background-size:cover;
+}
+
+header {
+    background-color: #111;
+    color: white;
+    padding: 20px;
+}
+
+.logo h1 {
+    display:flex
+    font-size: 32px;
+}
+
+nav ul {
+    list-style-type: none;
+    float: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 40px 20px;
+    text-align: left;
+}
+
+.about-us {
+    max-width: 800px;
+    margin: 0;
+    margin-top: -180px;
+}
+
+.about-us h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.about-us h3 {
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.about-us p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-us ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+.about-us ul li {
+    font-size: 18px;
+    line-height: 1.8;   
+    margin-bottom: 10px;
+}
+
+.about-us a {
+    color: #111;
+    text-decoration: none;
+}
+
+.para3 a{
+    color: red;
+}
+
+.about-us a:hover {
+    text-decoration: underline;
+}/* Team Section */
+.team {
+    background-color: #191919;
+    padding: 50px 0;
+    color: white;
+}
+
+.team .container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.team h2 {
+    margin-bottom: 40px;
+}
+
+.team-member {
+    display: inline-block;
+    margin: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+
+.team-member h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #808080;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px;
+}

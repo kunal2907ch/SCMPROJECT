@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Playz Sign Up Page</title>
+    <link rel="icon" type="image" href="images/P.png">
+    <link rel="stylesheet" type="text/css" href="signin.css">
+</head>
+<body>
+    <style>
+        #signup {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 83px;
+        }
+        .s p {
+            color: red;
+        }
+    </style>
+
+    <div class="box">
+        <img src="icon.jpeg" alt="Icon">
+        <div class="page">
+            <div class="header">
+                <a id="login" class="active" href="signin.html">Log In</a>
+                <a id="signup" class="active1" href="signup.html">Sign Up</a>
+            </div>
+            <div id="errorMsg"></div>
+            <div class="content">
+                <!-- Login Form -->
+                <form class="login" name="loginForm" onsubmit="return validateLogin()">
+                    <input type="text" name="name" id="logName" placeholder="Username" required>
+                    <input type="password" name="password" id="logPassword" placeholder="Password" required>
+                    <input type="email" name="e-mail" id="email" placeholder="Email address" required>
+                    <br><br>
+                    <input type="submit" value="Log In" id="loginBtn">
+                </form>
+
+                <!-- Sign Up Form -->
+                <form class="signup" name="signupForm" onsubmit="return validateSignup()">
+                    <input type="email" name="email" id="signEmail" placeholder="Email" required>
+                    <input type="text" name="name" id="signName" placeholder="Username" required>
+                    <input type="password" name="password" id="signPassword" placeholder="Password" required><br>
+                    <input type="submit" value="Sign Up" id="signup1">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function validateSignup() {
+            const email = document.getElementById('signEmail').value;
+            const username = document.getElementById('signName').value;
+            const password = document.getElementById('signPassword').value;
+            const errorMsg = document.getElementById('errorMsg');
+            errorMsg.innerHTML = ''; // Clear previous error message
+
+            // Validate email format
+            const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{3,}$/;
+            if (!email.match(emailPattern)) {
+                errorMsg.innerHTML = 'Please enter a valid email address.';
+                return false;
+            }
+
+            // Validate username length
+            if (username.length < 6) {
+                errorMsg.innerHTML = 'Username must be at least 6 characters long.';
+                return false;
+            }
+
+            // Validate password length
+            if (password.length < 6) {
+                errorMsg.innerHTML = 'Password must be at least 6 characters long.';
+                return false;
+            }
+
+            // Call showAlert only if all validations pass
+            alert('Sign Up successful!'); // Show success alert
+            window.location.href = 'signup.html'; // Redirect to signup.html
+            return false; // Prevent form submission
+        }
+
+        function validateLogin() {
+            const username = document.getElementById('logName').value;
+            const password = document.getElementById('logPassword').value;
+            const email = document.getElementById('email').value;
+            const errorMsg = document.getElementById('errorMsg');
+            errorMsg.innerHTML = ''; // Clear previous error message
+
+            // Check if all fields are filled
+            if (!username || !password || !email) {
+                errorMsg.innerHTML = 'All fields must be filled out.';
+                return false;
+            }
+            if (password.length < 6) {
+                errorMsg.innerHTML = 'Password must be at least 6 characters long.';
+                return false;
+            }
+            if (username.length < 6) {
+    errorMsg.innerHTML = 'Username must be at least 6 characters long.';
+    return false;
+}
+
+            // Validate email format
+            const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{3,}$/;
+            if (!email.match(emailPattern)) {
+                errorMsg.innerHTML = 'Please enter a valid email address.';
+                return false;
+            }
+
+            // If all validations pass, redirect to signup.html
+            window.location.href = 'signup.html'; // Redirect to signup.html
+            return false;
+        }
+        </script>
+        </body>
+        </html>
